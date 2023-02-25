@@ -47,6 +47,15 @@ class Produto{
          td_produto.innerText = this.arrayProdutos[i].nomeProduto
          td_valor.innerText = this.arrayProdutos[i].valor
 
+         let  imgEdit = document.createElement('img');
+         imgEdit.src = 'img/edit.svg';
+         td_acoes.appendChild(imgEdit);
+
+         let imgDelet = document.createElement('img')
+         imgDelet.src = 'img/delet.svg'
+         td_acoes.appendChild(imgDelet);
+
+
          
         }
     }
@@ -72,6 +81,9 @@ class Produto{
 
     cancelar(){
         
+    }
+    deletar(){
+
     }
 }
 
